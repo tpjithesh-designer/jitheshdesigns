@@ -3,389 +3,531 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imagility Website Redesign — Case Study by Jithesh D</title>
-<meta name="description" content="A UX &amp; content strategy case study: segmenting user journeys for higher conversions on the Imagility website.">
+<title>Imagility Website Redesign — Case Study | Jithesh</title>
+<meta name="description" content="Segmenting user journeys for higher conversions — how the Imagility platform website was redesigned into three conversion-optimized experiences.">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/imagility-case.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo"><img src="images/logo.png" alt="JD — Jithesh D logo"></a>
-
- <nav aria-label="Primary">
+    <a href="index.html" class="logo">Jithesh<span class="dot">.</span></a>
+    <nav>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="other-projects.html">Other Works</a></li>
-        <li><a href="Jithesh_Senior_Product_Designer_Resume.pdf" target="_blank" rel="noopener noreferrer" download="Jithesh_Senior_Product_Designer_Resume.pdf">Download Resume</a></li>
-        <li><a href="index.html#contact">Connect</a></li>
+        <li><a href="index.html#work" class="is-active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
-
     <div class="header-actions">
-      <a href="index.html#contact" class="btn-talk">Let's Talk <span class="status-dot" aria-hidden="true"></span></a>
+      <a href="mailto:jithesh.uxd@gmail.com" class="btn-talk"><span class="status-dot"></span> Let's Talk</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
-<main>
 
-  <!-- Case hero -->
-  <section class="case-hero">
-    <div class="container">
-      <div class="case-hero__meta reveal">
-        <a href="index.html" class="logo" style="font-size:20px;">imagility</a>
-        <p class="case-hero__tag">A UX &amp; Content Strategy<br>Case Study by Jithesh TP</p>
+<!-- ============ PIN GATE (hero) ============ -->
+<!-- <div class="pin-gate" id="pinGate">
+  <div class="pin-gate__card">
+    <div class="pin-gate__lock">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="10" width="14" height="10" rx="2" stroke="#17161a" stroke-width="1.6"/>
+        <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#17161a" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <span class="eyebrow">Protected Case Study</span>
+    <h1>Imagility Platform Case Study</h1>
+    <p class="pin-gate__hint">Enter the 6-letter PIN to continue</p>
+
+    <form id="pinForm" autocomplete="off">
+      <div class="pin-inputs">
+        <input type="text" maxlength="1" inputmode="text" aria-label="PIN character 1">
+        <input type="text" maxlength="1" inputmode="text" aria-label="PIN character 2">
+        <input type="text" maxlength="1" inputmode="text" aria-label="PIN character 3">
+        <input type="text" maxlength="1" inputmode="text" aria-label="PIN character 4">
+        <input type="text" maxlength="1" inputmode="text" aria-label="PIN character 5">
+        <input type="text" maxlength="1" inputmode="text" aria-label="PIN character 6">
+      </div>
+      <p class="pin-gate__error" id="pinError" role="alert"></p>
+      <p class="pin-gate__success" id="pinSuccess">Unlocked — enjoy the read.</p>
+    </form>
+
+    <div class="pin-gate__contact">
+      <span>Don't have a PIN? Reach out to me for one.</span>
+      <div class="pin-gate__links">
+        <a href="mailto:jithesh.uxd@gmail.com">Email</a>
+        <a href="https://wa.me/919947333100" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+919947333100">Call</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<main>
+  <div class="case-content" id="caseContent">
+
+    <!-- ============ CASE HERO ============ -->
+    <section class="case-hero container">
+      <div class="case-hero__meta">
+        <a href="index.html#work" class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M5 12l7-7M5 12l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform:scaleX(-1)"/></svg>
+          Back to all work
+        </a>
+        <span class="case-hero__tag">SaaS · Legaltech<br>Website Redesign</span>
       </div>
 
-      <h1 class="case-title reveal">Imagility Website Redesign</h1>
-      <p class="case-subtitle reveal">Segmenting User Journeys for Higher Conversions</p>
+      <h1 class="case-title">Imagility Website Redesign</h1>
+      <p class="case-subtitle">Segmenting User Journeys for Higher Conversions</p>
 
-      <div class="case-intro reveal">
-        <p>Imagility is a cloud-based immigration management platform serving law firms, companies and individuals. To communicate this at every stage of the journey through a single generic experience, restricting low lead conversions and poor segmentation, we led the UX &amp; Content Strategy for a complete website renovation — reformatting a general-purpose site into three clear, targeted experiences and reducing user drop-off.</p>
+      <div class="case-intro">
+        <p>Imagility is a cloud-based immigration management platform serving law firms, companies, and individual applicants. The original website spoke to all three audiences through a single generic experience, resulting in low lead conversions and poor segmentation. I led the UX &amp; content strategy for a complete website renovation — transforming a general-purpose site into three clear, conversion-optimized user journeys.</p>
         <dl class="case-facts">
+          <dt>Client</dt>
+          <dd>Imagility — Immigration Management SaaS</dd>
           <dt>My Role</dt>
-          <dd>UX Strategy · Information Architecture · Content Direction · Website Restructuring · UX Experience Design</dd>
+          <dd>UX Strategy, Information Architecture, Content Direction, Wireframing, Website Experience Design</dd>
           <dt>Outcome</dt>
-          <dd>3x+ improvement in conversions, clear segmentation, and improved ROI across all user groups</dd>
-          <dt>Year</dt>
-          <dd>2024</dd>
+          <dd>3× improvement in conversions, with clear segmentation and measurable ROI across all user groups</dd>
         </dl>
       </div>
 
       <div class="case-hero__image reveal">
-        <img src="images/imagility-hero.png" alt="Imagility website redesign — overview of key screens" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#dbeef8,#e7e2f7)'; this.parentElement.style.aspectRatio='16/8'; this.remove();">
+        <img src="Images/imagility-hero.png" alt="Imagility redesigned website mockups for Law Firm, Company and Individual audiences">
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Problem -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">The Problem</span>
-        <h2 class="section-title">"One Size Fits None"</h2>
-        <p class="section-desc">Imagility serves three fundamentally different audiences — attorneys, companies and individuals — but before the redesign, the site forced them through the same undifferentiated pages.</p>
-      </div>
-
-      <div class="pill-row reveal">
-        <span class="pill">⚖️ Attorneys</span>
-        <span class="pill">🏢 Companies</span>
-        <span class="pill">🙋 Individuals</span>
-      </div>
-
-      <div class="two-col reveal">
-        <div>
-          <h4 style="font-size:15px;margin-bottom:14px;">Key Pain Points</h4>
-          <ul class="cross-list">
-            <li>Undifferentiated content — too much information with too little clarity</li>
-            <li>Messaging mismatch — copy spoke to no single audience clearly</li>
-            <li>Navigation friction — it took too much digging to find relevant information</li>
-            <li>Lead quality gaps — same generic form for every visitor type</li>
-            <li>No traceability — marketing couldn't attribute leads by user type</li>
-          </ul>
+    <!-- ============ PROBLEM ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">The Problem</span>
+          <h2 class="section-title">One Size Fits <span>None</span></h2>
+          <p class="section-desc">Imagility serves three fundamentally different users — 🧑‍⚖️ Attorneys, 🏢 Companies, and 👤 Individuals. Before the redesign, the site forced all three through the same undifferentiated pages.</p>
         </div>
-        <div>
-          <h4 style="font-size:15px;margin-bottom:14px;">Pre-Renovation Indicators</h4>
-          <div class="stat-grid" style="grid-template-columns:1fr;">
-            <div class="stat-card"><div class="value">&lt;1.6%</div><div class="label">Conversion rate</div></div>
-            <div class="stat-card"><div class="value">~68%</div><div class="label">Bounce rate</div></div>
-            <div class="stat-card"><div class="value">&gt;48 hrs</div><div class="label">Lead touch time</div></div>
+
+        <div class="two-col reveal">
+          <div>
+            <h4 style="font-size:16px;font-weight:600;margin-bottom:14px;">Key Pain Points</h4>
+            <ul class="cross-list">
+              <li>Overloaded content — too much information with no structure</li>
+              <li>Ambiguous messaging — users couldn't identify how Imagility helped them</li>
+              <li>Navigation friction — 4–7 clicks to find relevant content</li>
+              <li>Lead quality drop — the same generic funnel served every audience</li>
+              <li>No traceability — marketing couldn't attribute leads to a user type</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h4>✋ The Core Insight</h4>
+            <p>A single unified website created competing priorities, diluted messaging, and a poor conversion ecosystem. Users needed clarity, not more content.</p>
+          </div>
+        </div>
+
+        <div class="stat-grid reveal" style="margin-top:32px;">
+          <div class="stat-card">
+            <div class="value">~1.8%</div>
+            <div class="label">Conversion Rate (pre-renovation)</div>
+          </div>
+          <div class="stat-card">
+            <div class="value">~68%</div>
+            <div class="label">Bounce Rate (pre-renovation)</div>
+          </div>
+          <div class="stat-card">
+            <div class="value">~48 hrs</div>
+            <div class="label">Lead Trace Time (pre-renovation)</div>
+          </div>
+        </div>
+
+        <figure class="media-frame reveal" style="margin-top:32px;">
+          <img src="Images/imagility_img2.png" alt="Original one-size-fits-all Imagility homepage before the redesign">
+        </figure>
+        <p class="figure-caption">The original site spoke to every audience through one generic homepage.</p>
+      </div>
+    </section>
+
+    <!-- ============ UNDERSTANDING THE USERS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Research</span>
+          <h2 class="section-title">Understanding the Users</h2>
+          <p class="section-desc">Stakeholder discussions and heuristic analysis surfaced very different expectations across the three personas.</p>
+        </div>
+
+        <div class="persona-grid reveal">
+          <div class="persona-card">
+            <h4>🧑‍⚖️ Attorneys / Law Firms</h4>
+            <h5>Needs</h5>
+            <ul>
+              <li>A reliable system to manage immigration cases efficiently</li>
+              <li>Clear visibility into petition progress, compliance, and documentation</li>
+              <li>Tools that reduce repetitive tasks and automate form generation</li>
+              <li>A secure platform to collaborate with clients and staff</li>
+            </ul>
+            <h5>Pain Points</h5>
+            <p>Too much generic copy; unclear differentiation.</p>
+          </div>
+          <div class="persona-card">
+            <h4>🏢 Companies / Employers</h4>
+            <h5>Needs</h5>
+            <ul>
+              <li>A centralized platform to track employee visa statuses</li>
+              <li>Streamlined workflows for hiring and managing foreign talent</li>
+              <li>Accurate, real-time compliance updates and reminders</li>
+              <li>A scalable solution for HR, legal, and operations teams to collaborate</li>
+            </ul>
+            <h5>Pain Points</h5>
+            <p>Difficulty locating enterprise-level capabilities.</p>
+          </div>
+          <div class="persona-card">
+            <h4>👤 Individuals / Applicants</h4>
+            <h5>Needs</h5>
+            <ul>
+              <li>Simple, step-by-step guidance for visa petition applications</li>
+              <li>Transparent visibility into case progress and required tasks</li>
+              <li>Easy-to-understand instructions without legal complexity</li>
+              <li>A trustworthy system to upload documents and communicate with attorneys/companies</li>
+            </ul>
+            <h5>Pain Points</h5>
+            <p>Overwhelmed by industry jargon and multi-layered pages.</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="media-frame reveal" style="margin-top:44px;">
-        <img src="images/imagility-old-home.png" alt="Original Imagility homepage before redesign" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#f7f2cc,#dbeef8)'; this.parentElement.style.aspectRatio='16/7'; this.remove();">
-      </div>
-    </div>
-  </section>
-
-  <!-- Understanding the users -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Research</span>
-        <h2 class="section-title">Understanding the Users</h2>
-        <p class="section-desc">Stakeholder discussions and heuristic analysis were used to identify the unique expectations of each audience.</p>
-      </div>
-
-      <div class="persona-grid reveal">
-        <div class="persona-card">
-          <h4>⚖️ Attorneys</h4>
-          <h5>Needs</h5>
-          <p>Case management, compliance, workflow visibility</p>
-          <h5>Pain Points</h5>
-          <p>Too much generic copy, unclear applicability</p>
+    <!-- ============ AUDIT FINDINGS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center;max-width:100%;">
+          <img src="Images/imagility_img3.png" alt="" style="width:100px;margin:0 auto 20px;">
+          <span class="eyebrow">UX Audit</span>
+          <h2 class="section-title">Audit Findings — What Was Broken</h2>
         </div>
-        <div class="persona-card">
-          <h4>🏢 Companies</h4>
-          <h5>Needs</h5>
-          <p>Employer petition tracking, streamlined hiring workflows</p>
-          <h5>Pain Points</h5>
-          <p>Employer stories were buried under attorney-first messaging</p>
-        </div>
-        <div class="persona-card">
-          <h4>🙋 Individuals</h4>
-          <h5>Needs</h5>
-          <p>Guidance, transparency, step-by-step case updates</p>
-          <h5>Pain Points</h5>
-          <p>Difficulty understanding what applied to their own case</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Audit findings -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Audit</span>
-        <h2 class="section-title">What Was Broken</h2>
-        <p class="section-desc">A structured heuristic audit of the existing site surfaced five recurring issues.</p>
-      </div>
-
-      <div class="two-col reveal">
-        <ul class="cross-list">
-          <li>Siloed content living in a unified experience</li>
-          <li>Hard-to-scan content hierarchy</li>
-          <li>Generic, one-size-fits-all CTAs</li>
-          <li>No clear primary path for any single user type</li>
-          <li>Analytics blind spot — no visibility into which user type converted</li>
+        <ul class="cross-list reveal" style="max-width:760px;margin:0 auto 48px;">
+          <li><strong>Siloed content living in a unified environment</strong> — creating confusion and loss of message relevance</li>
+          <li><strong>Hard-to-scan content hierarchy</strong> — walls of text with minimal differentiation</li>
+          <li><strong>Generic CTAs</strong> — "Learn More" everywhere meant no funnel direction</li>
+          <li><strong>Unclear primary path</strong> — navigation presented mixed resources for every segment</li>
+          <li><strong>Analytics blind spot</strong> — the team couldn't trace who was converting, or from where</li>
         </ul>
-        <div class="media-frame">
-          <img src="images/imagility-old-nav.png" alt="Imagility's original unsegmented navigation" loading="lazy" onerror="this.parentElement.style.background='#f7f6f9'; this.parentElement.style.aspectRatio='4/3'; this.remove();">
+
+        <div class="reveal">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:14px;">Old Navigation (Across the Website)</h4>
+          <div class="old-nav-pills">
+            <span class="pill">Law Firm</span>
+            <span class="pill">Company</span>
+            <span class="pill">Individual</span>
+            <span class="pill">Products</span>
+            <span class="pill">Resources</span>
+            <span class="pill">News</span>
+            <span class="pill">Login</span>
+            <span class="pill">Sign Up</span>
+            <span class="pill">Request Demo</span>
+          </div>
+
+          <figure class="media-frame">
+            <img src="Images/imagility_img4.png" alt="Old unsegmented navigation compared with the new role-based approach: Law Firms, Companies, Individuals">
+          </figure>
+          <p class="figure-caption">New approach — clear, role-based CTAs placed in the visible area.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Strategic solution -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">The Solution</span>
-        <h2 class="section-title">Segmentation by Design</h2>
-        <p class="section-desc">To solve "one size fits none," the site was redesigned into three fully separated experiences, each with its own navigation, content and CTAs.</p>
-      </div>
-
-      <div class="persona-grid reveal">
-        <div class="persona-card">
-          <h4>⚖️ Attorneys</h4>
-          <ul class="check-list">
-            <li>Dedicated case management messaging</li>
-            <li>Build clear conversion funnels</li>
-          </ul>
+    <!-- ============ STRATEGIC SOLUTION ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">The Strategy</span>
+          <h2 class="section-title">Segmentation by Design</h2>
+          <p class="section-desc">To solve the overload and lack of specificity, I redesigned Imagility's website into three sub-sites, each dedicated to a unique user type.</p>
         </div>
-        <div class="persona-card">
-          <h4>🏢 Companies</h4>
-          <ul class="check-list">
-            <li>Improve lead qualification</li>
-            <li>Redesign employer-first pages</li>
-          </ul>
+
+        <div class="ia-grid reveal">
+          <div class="ia-card">
+            <h4>/attorney — For immigration law firms</h4>
+            <ul>
+              <li>OCR-enabled data extraction</li>
+              <li>Bulk upload</li>
+              <li>Immigration wizard</li>
+              <li>Immigration lifecycle</li>
+              <li>LCA / petition building</li>
+              <li>Petition vs. forms</li>
+              <li>Analyze petitions</li>
+              <li>LawPay integration</li>
+            </ul>
+          </div>
+          <div class="ia-card">
+            <h4>/company — For enterprises hiring foreign talent</h4>
+            <ul>
+              <li>Immigration</li>
+              <li>HR</li>
+              <li>Compliance</li>
+              <li>Talent acquisition</li>
+              <li>Company resources</li>
+              <li>Login / Sign up</li>
+              <li>Request demo</li>
+            </ul>
+          </div>
+          <div class="ia-card">
+            <h4>/individual — For personal applicants</h4>
+            <ul>
+              <li>Immigration</li>
+              <li>Family sponsorships</li>
+              <li>Digital user data creation</li>
+              <li>Petition building</li>
+              <li>Visas we cover</li>
+              <li>Mobile apps</li>
+              <li>Individual resources</li>
+            </ul>
+          </div>
         </div>
-        <div class="persona-card">
-          <h4>🙋 Individuals</h4>
-          <ul class="check-list">
-            <li>Applicant-supporting page copy</li>
-            <li>Reduced cognitive load per page</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- IA -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Structure</span>
-        <h2 class="section-title">Information Architecture</h2>
-        <p class="section-desc">Three fully separated architectures — each with tailored navigation and dedicated feature explanation.</p>
-      </div>
-
-      <div class="ia-grid reveal">
-        <div class="ia-card">
-          <h4>Law Firms</h4>
-          <ul>
-            <li>Features Overview</li>
-            <li>Case Management</li>
-            <li>Compliance Tools</li>
-            <li>Resources</li>
-            <li>Request Demo</li>
-          </ul>
-        </div>
-        <div class="ia-card">
-          <h4>Company</h4>
-          <ul>
-            <li>Products</li>
-            <li>Employer Petitions</li>
-            <li>Company Resources</li>
-            <li>Login / Sign Up</li>
-            <li>Request Demo</li>
-          </ul>
-        </div>
-        <div class="ia-card">
-          <h4>Individual</h4>
-          <ul>
-            <li>Case Tracker</li>
-            <li>FAQs &amp; Guidance</li>
-            <li>Individual Resources</li>
-            <li>Visa &amp; Case Status</li>
-            <li>Get Started</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Wireframing -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Design</span>
-        <h2 class="section-title">Wireframing &amp; User Journey Redesign</h2>
-        <p class="section-desc">Wireframes were built scenario by scenario, so each user journey begins with a spot-specific value statement.</p>
-      </div>
-
-      <ul class="check-list reveal" style="margin-bottom:30px;max-width:520px;">
-        <li>First-click clarity — every journey begins with a spot-specific value statement</li>
-        <li>Reduced friction — shortened pathways from landing to CTA</li>
-        <li>Thoughtful CTA hierarchy — one supportive, one primary CTA designed for intent</li>
-      </ul>
-
-      <div class="gallery-grid reveal">
-        <div class="media-frame"><img src="images/imagility-wireframe-1.png" alt="Wireframe exploration 1" loading="lazy" onerror="this.parentElement.style.background='#f7f6f9'; this.parentElement.style.aspectRatio='4/3'; this.remove();"></div>
-        <div class="media-frame"><img src="images/imagility-wireframe-2.png" alt="Wireframe exploration 2" loading="lazy" onerror="this.parentElement.style.background='#f7f6f9'; this.parentElement.style.aspectRatio='4/3'; this.remove();"></div>
-        <div class="media-frame"><img src="images/imagility-wireframe-3.png" alt="Wireframe exploration 3" loading="lazy" onerror="this.parentElement.style.background='#f7f6f9'; this.parentElement.style.aspectRatio='4/3'; this.remove();"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final UI -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Outcome</span>
-        <h2 class="section-title">Final UI — The Three Sub-Sites</h2>
-        <p class="section-desc">Three separate experiences built from shared components, each focused on its own audience.</p>
-      </div>
-
-      <div class="gallery-grid reveal">
-        <div class="media-frame"><img src="images/imagility-final-1.png" alt="Final law firm site UI" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#dbeef8,#fff)'; this.parentElement.style.aspectRatio='4/5'; this.remove();"></div>
-        <div class="media-frame"><img src="images/imagility-final-2.png" alt="Final company site UI" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#e7e2f7,#fff)'; this.parentElement.style.aspectRatio='4/5'; this.remove();"></div>
-        <div class="media-frame"><img src="images/imagility-final-3.png" alt="Final individual site UI" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#fbe2db,#fff)'; this.parentElement.style.aspectRatio='4/5'; this.remove();"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROI -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Results</span>
-        <h2 class="section-title">Quantifiable ROI — Post-Launch Impact</h2>
-      </div>
-
-      <div class="table-wrap reveal">
-        <table class="roi-table">
-          <thead>
-            <tr><th>Metric</th><th>Before</th><th>After</th><th>Result</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Overall Conversion Rate</td><td>1.6%</td><td>5.2%</td><td class="result">+166%</td></tr>
-            <tr><td>Company Leads</td><td>68%</td><td>82%</td><td class="result">+140% inc.</td></tr>
-            <tr><td>Attorney Bounce Rate</td><td>68%</td><td>41%</td><td class="result">-27%</td></tr>
-            <tr><td>Lead Touch Time</td><td>48 hrs</td><td>6 hrs</td><td class="result">-87%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="two-col reveal" style="margin-top:40px;">
-        <div>
-          <h4 style="font-size:15px;margin-bottom:14px;">Additional Gains</h4>
-          <ul class="check-list">
-            <li>Higher-quality leads calls per week</li>
-            <li>Rapid content updates thanks to a modular UI</li>
-          </ul>
-        </div>
-        <div>
-          <h4 style="font-size:15px;margin-bottom:14px;">Conversion Strategy Improvements</h4>
-          <ul class="check-list">
-            <li>Role-based landing pages</li>
-            <li>CTA hierarchy matched to intent</li>
-            <li>Segmented onboarding flows</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Strategic wins / next steps -->
-  <section class="section">
-    <div class="container two-col reveal">
-      <div>
-        <h4 style="font-size:15px;margin-bottom:14px;">Strategic Wins</h4>
-        <ul class="check-list">
-          <li>Imagility now supports each audience with dedicated experiences</li>
-          <li>Better-aligned handoff between marketing and sales</li>
-          <li>Faster, more confident content updates</li>
+        <h4 style="font-size:16px;font-weight:600;margin:40px 0 14px;">🎯 Primary Goals of Segmentation</h4>
+        <ul class="check-list reveal">
+          <li>Deliver relevant information instantly</li>
+          <li>Build clear conversion funnels</li>
+          <li>Improve lead attribution &amp; qualification</li>
+          <li>Reduce cognitive load &amp; bounce rate</li>
+          <li>Strengthen SEO through focused, dedicated content</li>
         </ul>
       </div>
-      <div>
-        <h4 style="font-size:15px;margin-bottom:14px;">Next Steps for Imagility</h4>
-        <ul class="check-list">
-          <li>Personalized onboarding per user type</li>
-          <li>Deeper SEO segmentation</li>
-          <li>Continued accessibility improvements</li>
+    </section>
+
+    <!-- ============ INFORMATION ARCHITECTURE ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Information Architecture</span>
+          <h2 class="section-title">Three Fully Separated Architectures</h2>
+          <p class="section-desc">Each sub-site shipped with its own navigation, CTAs, feature explanations, and resources.</p>
+        </div>
+        <div class="pill-row reveal">
+          <span class="pill">Tailored navigation</span>
+          <span class="pill">Unique CTAs — "Request Demo" vs. "Start Your Petition"</span>
+          <span class="pill">Dedicated feature explanations</span>
+          <span class="pill">Focused resources / blogs</span>
+        </div>
+        <figure class="media-frame reveal">
+          <img src="Images/imagility_img5.png" alt="Information architecture diagram for Law Firm, Company, and Individual sub-sites">
+        </figure>
+        <p class="figure-caption">Three independent site maps branching from a shared home page.</p>
+      </div>
+    </section>
+
+    <!-- ============ WIREFRAMING ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Wireframing</span>
+          <h2 class="section-title">User Journey Redesign</h2>
+          <p class="section-desc">I created scenario-based flows for each persona, focused on first-click clarity and reduced friction.</p>
+        </div>
+
+        <div class="brainstorm-grid reveal">
+          <div class="brainstorm-item">
+            <span class="num">01</span>
+            <div>
+              <h4>First-Click Clarity</h4>
+              <p>Each journey begins with a user-specific value statement.</p>
+            </div>
+          </div>
+          <div class="brainstorm-item">
+            <span class="num">02</span>
+            <div>
+              <h4>Reduced Friction</h4>
+              <p>Shortened pathways from landing page to CTA.</p>
+            </div>
+          </div>
+          <div class="brainstorm-item">
+            <span class="num">03</span>
+            <div>
+              <h4>Microcopy That Guides</h4>
+              <p>Focused, benefit-driven copy replaces generic information.</p>
+            </div>
+          </div>
+          <div class="brainstorm-item">
+            <span class="num">04</span>
+            <div>
+              <h4>Thoughtful CTA Hierarchy</h4>
+              <p>Primary and supportive CTAs designed for each intent stage.</p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="media-frame reveal" style="margin-top:36px;">
+          <img src="Images/imagility_img6.png" alt="Wireframes mapping the Home to /attorney, /company, /individual user journeys">
+        </figure>
+        <p class="figure-caption">Scenario-based wireframes for the Home → Attorney / Company / Individual journeys.</p>
+      </div>
+    </section>
+
+    <!-- ============ FINAL UI ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Final UI</span>
+          <h2 class="section-title">The Three Sub-Sites</h2>
+          <p class="section-desc">Each persona now lands on a dedicated, conversion-optimized experience built around their goals.</p>
+        </div>
+        <figure class="media-frame reveal">
+          <img src="Images/imagility_img7.png" alt="Final designed Law Firm, Company, and Individual sub-site homepages">
+        </figure>
+        <p class="figure-caption">Law Firm, Company, and Individual — three purpose-built homepages.</p>
+      </div>
+    </section>
+
+    <!-- ============ ROI ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Impact</span>
+          <h2 class="section-title">Quantifiable ROI — Post-Launch</h2>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="roi-table">
+            <thead>
+              <tr><th>Metric</th><th>Before</th><th>After</th><th>Result</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Overall Conversion Rate</td><td>1.8%</td><td>5.2%</td><td class="result">+188%</td></tr>
+              <tr><td>Company Leads</td><td>40%</td><td>80%</td><td class="result">+140%</td></tr>
+              <tr><td>Attorney Bounce Rate</td><td>68%</td><td>41%</td><td class="result">−27%</td></tr>
+              <tr><td>Lead Trace Time</td><td>48 hrs</td><td>6 hrs</td><td class="result">−87%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 style="font-size:16px;font-weight:600;margin:36px 0 14px;">⭐ Additional Gains</h4>
+        <ul class="check-list reveal">
+          <li>2.4× longer time on site</li>
+          <li>Higher-quality sales calls, thanks to segmentation</li>
+          <li>Clearer reporting for marketing campaigns</li>
+          <li>Rapid content updates thanks to modular IA</li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Credits -->
-  <section class="thanks-block reveal">
-    <div class="container">
-      <h2>Thank You for Viewing</h2>
-      <p>Project Credits</p>
-      <dl class="credits-grid" style="margin-top:30px;text-align:left;">
-        <div><dt>UX Strategy &amp; Design Lead</dt><dd>Jithesh TP</dd></div>
-        <div><dt>Project Manager</dt><dd>Karan Tiwari</dd></div>
-        <div><dt>Engineering</dt><dd>Imagility Engineering Team</dd></div>
-      </dl>
-    </div>
-  </section>
+    <!-- ============ CONVERSION STRATEGY ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Strategy in Detail</span>
+          <h2 class="section-title">Conversion Strategy Improvements</h2>
+        </div>
 
+        <div class="strategy-grid reveal">
+          <div class="strategy-card">
+            <h4>Key UX Tactics</h4>
+            <ul>
+              <li>Role-based landing</li>
+              <li>CTA priority framework</li>
+              <li>Simplified forms</li>
+              <li>Cognitive load reduction</li>
+              <li>Improved copy hierarchy</li>
+              <li>Audience tagging enabled</li>
+            </ul>
+          </div>
+          <div class="strategy-card">
+            <h4>Behavioral UX Enhancements</h4>
+            <ul>
+              <li>More whitespace</li>
+              <li>Chunked content</li>
+              <li>Guided pathways</li>
+              <li>Directional cues — scroll anchors, breadcrumbs</li>
+            </ul>
+          </div>
+          <div class="strategy-card">
+            <h4>Analytics &amp; Tracking Setup</h4>
+            <ul>
+              <li>Clear tracking per sub-site</li>
+              <li>Conversion source tracing</li>
+              <li>Behavior flow per persona</li>
+              <li>Scroll depth insights</li>
+              <li>CTA heatmapping</li>
+              <li>HubSpot CRM tagging for lead source</li>
+            </ul>
+          </div>
+          <div class="strategy-card">
+            <h4>Business Impact</h4>
+            <ul>
+              <li>Imagility now markets to each segment with clarity</li>
+              <li>Better-qualified leads → higher demo-to-close rate</li>
+              <li>Sales team receives categorized lead lists</li>
+              <li>Improved user trust via guided UX</li>
+              <li>Clear expansion path for future features</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="font-size:16px;font-weight:600;margin:40px 0 14px;">Next Steps for Imagility</h4>
+        <ul class="check-list reveal">
+          <li>Personalized experiences for returning users</li>
+          <li>Deep-dive SEO strategy per sub-site</li>
+          <li>Interactive guides for individuals</li>
+          <li>Improved multi-language support</li>
+          <li>Enhanced accessibility compliance</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CREDITS + THANKS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Credits</span>
+          <h2 class="section-title">Project Team</h2>
+        </div>
+        <dl class="credits-grid reveal">
+          <div><dt>UX Strategy, IA &amp; Design Lead</dt><dd>Jithesh TP</dd></div>
+          <div><dt>Project Manager</dt><dd>Karen Thorat</dd></div>
+          <div><dt>Content Head</dt><dd>Priya</dd></div>
+          <div><dt>Marketing Head</dt><dd>Aadarsh</dd></div>
+          <div><dt>Development</dt><dd>Shashirekha + Engineering Team</dd></div>
+          <div><dt>Product &amp; Stakeholders</dt><dd>Imagility Leadership</dd></div>
+        </dl>
+      </div>
+
+      <div class="thanks-block reveal">
+        <h2>Thank You for Viewing</h2>
+        <p>Want to see the live sub-sites or walk through the flows in more detail?</p>
+        <a href="mailto:jithesh.uxd@gmail.com" class="link-arrow" style="justify-content:center;margin-top:16px;">
+          Let's talk
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </div>
 </main>
 
-<footer class="site-footer" id="contact">
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-cta reveal">
-      <p class="kicker">Get in touch with me at</p>
-      <p class="email">jithesh.uxd@gmail.com</p>
-      <a href="mailto:jithesh.uxd@gmail.com" class="btn btn-primary">Reach Me</a>
+    <div class="footer-cta">
+      <div class="kicker">Have a project in mind?</div>
+      <a href="mailto:jithesh.uxd@gmail.com" class="email">jithesh.uxd@gmail.com</a>
     </div>
     <div class="footer-bottom">
-      <nav aria-label="Footer">
-        <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#work">About</a></li>
-          <li><a href="index.html#work">Experiments</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
+      <span>© <span data-year></span> Jithesh. All rights reserved.</span>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="https://linkedin.com/in/jithesh-product-designer" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
-      <a href="https://linkedin.com/in/jithesh-product-designer" target="_blank" rel="noopener" class="footer-nav"><span style="text-transform:uppercase;font-size:13px;font-weight:500;letter-spacing:.06em;">LinkedIn</span></a>
     </div>
   </div>
 </footer>
 
 <button class="back-to-top" aria-label="Back to top">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
 <script src="js/script.js"></script>
+<script src="js/imagility-case.js"></script>
 </body>
 </html>
